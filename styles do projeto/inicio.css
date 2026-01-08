@@ -1,0 +1,99 @@
+/* tipo de letra */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* pagina basico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar (estrutura externa) */
+.navbar {
+  width: 100%;
+  padding: 36px 0;              
+}
+
+/* Container da navbar  */
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;           
+  min-height: 72px;          
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #f7f4f2;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* Links */
+.nav-links {
+  display: flex;
+  gap: 44px;                  
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2f2f2f;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1;            
+  transition: color 0.2s ease;
+}
+
+/* Hover */
+.nav-links a:hover {
+  color: #d64545;
+}
+
+/* Link ativo (opcional) */
+.nav-links a.active {
+  color: #d64545;
+  font-weight: 600;
+}
+
+/* Botão (se ainda usares noutras páginas) */
+.signup-btn {
+  background: #d64545;
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.signup-btn:hover {
+  background: #bf3a3a;
+}
+
+/* bonequinho de  utilizador */
+.user-circle {
+    width: 44px;                
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e6e6e6;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.user-circle:hover {
+    background: #d64545;
+}
+
+.user-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
